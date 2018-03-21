@@ -7805,25 +7805,17 @@ client.tasks.findByProject('587290233856319').then(function(response){
   for (let i = 0; i < response.data.length; i++) {
     var div = document.createElement('div');
     var taskElement = document.createElement('a');
-    var closeElement = document.createElement('img');
-    closeElement.src = 'img/close.png'
-    div.classList.add('row');
+    var closeElement = document.createElement('div');
+    div.classList.add('task-container')
     taskElement.classList.add('tasks');
     closeElement.classList.add('close-btn');
     taskElement.href = 'https://app.asana.com/0/587290233856319/'+response.data[i].id;
     taskElement.innerHTML = response.data[i].name;
-    let container = document.getElementById('task-container');
+    let container = document.getElementById('main-container');
     div.appendChild(taskElement);
     div.appendChild(closeElement);
     container.appendChild(div);
   }
-});
-
-$(document).ready(function(){
-  $('.close-btn').click(function(){
-    console.log($(this).parent());
-    $(this).parent().css("display","none");
-  });
 });
 
 },{"asana":41,"util":39}],41:[function(require,module,exports){

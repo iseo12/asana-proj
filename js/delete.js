@@ -1,6 +1,8 @@
+
 $(document).ready(function(){
-  $('.close-btn').click(function(){
-    console.log($(this).parent());
-    $(this).parent().css("display","none");
+  console.log('ready');
+  //hides task when close button is pressed
+  $(document).on('click', ".close-btn", function() {
+    $(this).parent().hide();
   });
 });
