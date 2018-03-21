@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav {
+  background-color: #2f3d52;
+  padding: 10px 0;
+}
+
+nav img {
+  width: 220px;
+  margin-left: 5%;
+}
+
+#task-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main img {
+  width: 30px;
+}
+
+.tasks {
+  margin-right: 15px;
+}
